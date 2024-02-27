@@ -3,13 +3,19 @@ import storeRouter from "./routes/store.js";
 import recepiesRouter from "./routes/recepies.js";
 import about_contactRouter from "./routes/about_contact.js";
 
+import * as path from "path";
+
 const app=express();
 const port= 3000;
+const __dirname = path.resolve();
+const day= new Date().getDay()
 
 app.get("/", (req,res)=> {
     res.render("pages/home.ejs",
     {
-        mainMessage: "Welcome to BestTiramisu.com!"
+        mainMessage: "Welcome to BestTiramisu.com!",
+        dayOfTheWeek: day
+        
     })
 })
 
