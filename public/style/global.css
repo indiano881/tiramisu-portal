@@ -1,3 +1,10 @@
+:root {
+    --border-standard: 3px solid #FDE4CF;
+    --color-primary: #FCFBF4; /*white cream */
+    --color-secondary: #FBF8CC; /*yellow savoiardish cream */
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -7,8 +14,21 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    margin:0;
     min-height: 100%;
-    background-color: #FBF8CC;
+    background-color: var(--color-primary) ;
+}
+
+section {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: var(--color-secondary);
+    border: var(--border-standard);
+    
 }
