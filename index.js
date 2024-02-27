@@ -1,5 +1,7 @@
 import express from "express";
 import storeRouter from "./routes/store.js";
+import recepiesRouter from "./routes/recepies.js";
+import about_contactRouter from "./routes/about_contact.js";
 
 const app=express();
 const port= 3000;
@@ -13,6 +15,8 @@ app.listen(port, ()=>console.log("SERVER CONNECTED"))
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use("/tiramisu", storeRouter)
+app.use("/recepies", recepiesRouter)
+app.use("/about_us", about_contactRouter)
 
 /*
 Instructions
