@@ -13,7 +13,7 @@ const day= new Date().getDay()
 app.get("/", (req,res)=> {
     res.render("pages/home.ejs",
     {
-        mainMessage: "Welcome to BestTiramisu.com!",
+        mainMessage: "...for the Tiramisu´s Dreamers...",
         dayOfTheWeek: day
         
     })
