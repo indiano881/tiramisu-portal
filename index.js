@@ -8,7 +8,8 @@ import * as path from "path";
 const app=express();
 const port= 3000;
 const __dirname = path.resolve();
-const day= new Date().getDay()
+const day= new Date("1988-07-01").getDay();
+console.log(day)
 
 app.get("/", (req,res)=> {
     res.render("pages/home.ejs",
