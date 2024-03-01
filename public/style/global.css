@@ -35,6 +35,7 @@ h1 {
 
 .opening-hours {
     background-color: var(--color-secondary);
+    border: var(--border-standard);
     height: 40px;
     font-weight: bold;
 }

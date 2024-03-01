@@ -10,10 +10,7 @@ const port= 3000;
 const __dirname = path.resolve();
 const day= new Date().getDay();
 app.set("views", path.join(__dirname, "views"));
-app.use((req, res, next) => {
-  res.locals.url = req.url;
-  next();
-});
+
 
 app.get("/", (req,res)=> {
     res.render("pages/home.ejs",
