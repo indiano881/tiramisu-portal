@@ -1,11 +1,23 @@
 @font-face {
     font-family: "choco";
-    src: url("../fonts/chocochici-2omyw-webfont.woff");
+    src: url("../fonts/choco/chocochici-2omyw-webfont.woff");
 }
 
 @font-face {
     font-family: "choco";
-    src: url("../fonts/chocochici-2omyw-webfont.woff2");
+    src: url("../fonts/choco/chocochici-2omyw-webfont.woff2");
+}
+
+@font-face {
+    font-family: "noto";
+    font-style: normal;
+    src: url("../fonts/noto/notosans-regular-webfont.woff")
+}
+
+@font-face {
+    font-family: "noto";
+    font-style: normal;
+    src: url("../fonts/noto/notosans-regular-webfont.woff2")
 }
   
   
