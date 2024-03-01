@@ -47,6 +47,16 @@ section {
     background-repeat: no-repeat; 
 }
 
+.history {
+    background-color: var(--color-primary);
+    border: var(--border-black);
+    border-radius: 20px;
+    text-align: center;
+    margin: 24px 48px 48px 24px;
+    padding: 16px
+
+}
+
 .youtube-video1 {
     border: 3px solid black;
     margin-top: 36px;
