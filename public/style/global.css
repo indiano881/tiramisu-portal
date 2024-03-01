@@ -89,6 +89,10 @@ footer {
         background-image: url("../images/background-vertical.jpg");
         
     }
+
+    .history {
+        margin-top: 64px;
+    }
     .youtube-video1 {
         display: none;
     }
