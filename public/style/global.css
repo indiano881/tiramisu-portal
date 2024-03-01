@@ -24,12 +24,10 @@ body {
     margin:0;
     min-height: 100%;
     background-color: var(--color-primary) ;
-    h1 {
-        font-family: choco, Georgia, Times, 'Times New Roman', serif;
-    }
 }
 
 h1 {
+    font-family: choco, Georgia, Times, 'Times New Roman', serif;
     font-size: calc(1.4rem+1vw);
     font-style: italic;
 }
@@ -65,8 +63,18 @@ footer {
     border: var(--border-standard);
     
 }
+@media screen and (min-width: 500px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 4rem;
+    }
     section {
         background-image: url("../images/background-vertical.jpg");
         
@@ -79,5 +87,10 @@ footer {
         margin-top: 48px;
         display: inline-block;
         
+    }
+}
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
     }
 }
