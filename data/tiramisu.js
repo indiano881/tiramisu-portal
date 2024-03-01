@@ -120,3 +120,10 @@ const vegan= new Tiramisu(
 const day= new Date().getDay();
 
 export { day };
+/*
+Tiramisù è la quinta parola della cucina italiana più conosciuta all’estero, la prima per i dolci. Etimologia della parola Tiramisù: sollevami, rinforza il mio corpo. Deriva del dialetto trevigiano “Tireme su”, italianizzato in Tiramisù negli ultimi decenni del secolo scorso.
+La memoria storica della “Gioiosa Marca” ricorda che il Tiramisù nasce a Treviso nella seconda metà del'Ottocento. Le prime testimonianze di questo dolce ci conducono nella tradizione contadina trevigiana: lo Sbatudin. Questo è il seme dal quale è nato e poi evoluto il Tiramisù. Tuorlo d’uovo sbattuto con lo zucchero fino a divenire una crema spumosa. Già nell’ottocento nella provincia di Treviso si preparava questa crema primordiale, base del Tiramisù. Ogni famiglia personalizzava la crema con aggiunta di altri ingredienti seguendo i gusti delle persone e del territorio: caffè, vino bianco, liquore, biscotti, burro, ricotta, panna, cacao
+
+Piemonte i Savoiardi (biscotti tipici dei Savoia) e iniziato a diffondere questo ingrediente nel territorio trevigiano, ecco come si spiega la diffusione di questo ingrediente nell’ ottocento
+Un’ altro ingrediente importante del Tiramisù è il mascarpone o mascherpone (probabilmente dal lombardo “mascherpa” che vuol dire ricotta, ma non è ricotta) zona di provenienza Lodi , Abbiategrasso, Como e Lecco. Il Mascarpone è una crema di latte acidificata ottenuta da panna o crema di latte.
+*/
