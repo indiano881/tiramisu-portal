@@ -2,13 +2,14 @@ import express from "express";
 import storeRouter from "./routes/store.js";
 import recepiesRouter from "./routes/recepies.js";
 import about_contactRouter from "./routes/about_contact.js";
+import { day } from "./data/tiramisu.js";
 
 import * as path from "path";
 
 const app=express();
 const port= 3000;
 const __dirname = path.resolve();
-const day= new Date().getDay();
+
 app.set("views", path.join(__dirname, "views"));
 
 
@@ -19,7 +20,9 @@ app.get("/", (req,res)=> {
         dayOfTheWeek: day
         
     })
+    
 })
+
 
 app.listen(port, ()=>console.log("SERVER CONNECTED"))
 

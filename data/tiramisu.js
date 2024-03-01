@@ -1,10 +1,24 @@
-function Tiramisu(name, time, calories, price, description, image) {
+function Tiramisu(
+    name, 
+    time, 
+    calories, 
+    price, 
+    description, 
+    image, 
+    ingredient1,
+    ingredient2,
+    ingredient3,
+    ingredient4,
+    ingredient5,
+    ingredient6,
+    ingredient7,
+    ingredient8) {
     this.name=name;
     this.time=time;
     this.calories=calories;
     this.price=price;
     this.description=description;
-    this.image=image
+    this.image=image;
     this.ingredient1=ingredient1;
     this.ingredient2=ingredient2;
     this.ingredient3=ingredient3;
@@ -102,3 +116,7 @@ const vegan= new Tiramisu(
     "caffe",
     "cacao powder"
 )
+
+const day= new Date().getDay();
+
+export { day };
