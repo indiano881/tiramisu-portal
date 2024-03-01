@@ -2,9 +2,11 @@ import express from "express";
 import storeRouter from "./routes/store.js";
 import recepiesRouter from "./routes/recepies.js";
 import about_contactRouter from "./routes/about_contact.js";
+import historyRouter from "./routes/history.js";
 import { day } from "./data/tiramisu.js";
 
 import * as path from "path";
+
 
 const app=express();
 const port= 3000;
@@ -16,6 +18,7 @@ app.set("views", path.join(__dirname, "views"));
 app.get("/", (req,res)=> {
     res.render("pages/home.ejs",
     {
+        page: "main",
         mainMessage: "...for the Tiramisu´s Dreamers...",
         dayOfTheWeek: day
         
@@ -32,6 +35,7 @@ app.set("view engine", "ejs");
 app.use("/tiramisu", storeRouter)
 app.use("/recepies", recepiesRouter)
 app.use("/about_us", about_contactRouter)
+app.use("/history", historyRouter)
 
 /*
 Instructions
