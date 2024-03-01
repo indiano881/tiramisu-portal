@@ -40,7 +40,11 @@ h1 {
 }
 
 section {
+    background-image: url("../images/background.jpg");
     flex-grow: 1;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 
@@ -49,4 +53,11 @@ footer {
     background-color: var(--color-secondary);
     border: var(--border-standard);
     
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        background-image: url("../images/background-vertical.jpg");
+        
+    }
 }
