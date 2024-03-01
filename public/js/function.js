@@ -1,5 +1,6 @@
 $(()=>{
-    $("h1").hide().fadeIn(500);
+    $("h1").fadeOut(2000);
+    alert("Connected")
 
 
 })

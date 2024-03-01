@@ -8,8 +8,12 @@ import * as path from "path";
 const app=express();
 const port= 3000;
 const __dirname = path.resolve();
-const day= new Date("1988-07-01").getDay();
-console.log(day)
+const day= new Date().getDay();
+app.set("views", path.join(__dirname, "views"));
+app.use((req, res, next) => {
+  res.locals.url = req.url;
+  next();
+});
 
 app.get("/", (req,res)=> {
     res.render("pages/home.ejs",
@@ -24,6 +28,7 @@ app.listen(port, ()=>console.log("SERVER CONNECTED"))
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
+
 app.use("/tiramisu", storeRouter)
 app.use("/recepies", recepiesRouter)
 app.use("/about_us", about_contactRouter)
