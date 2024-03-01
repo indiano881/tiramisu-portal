@@ -1,5 +1,6 @@
 :root {
     --border-standard: 3px solid #FDE4CF;
+    --border-black: 3px solid black;
     --color-primary: #FCFBF4; /*white cream */
     --color-secondary: #FBF8CC; /*yellow savoiardish cream */
 }
@@ -48,6 +49,15 @@ section {
     background-repeat: no-repeat; 
 }
 
+.youtube-video1 {
+    border: 3px solid black;
+    margin-top: 36px;
+    
+    
+}
+.youtube-video2 {
+    display: none;
+}
 
 
 footer {
@@ -59,6 +69,15 @@ footer {
 @media screen and (min-width: 768px) {
     section {
         background-image: url("../images/background-vertical.jpg");
+        
+    }
+    .youtube-video1 {
+        display: none;
+    }
+    .youtube-video2 {
+        border: var(--border-black);
+        margin-top: 48px;
+        display: inline-block;
         
     }
 }
