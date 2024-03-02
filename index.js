@@ -43,12 +43,15 @@ app.get("/tir", (req, res) => {
    const selectedTiramisu = tiramisuArray[index];
    
    console.log(selectedTiramisu);
-   res.render("pages/home.ejs", 
+   res.render("pages/single-tiramisu.ejs", 
     {
       selectedTiramisu, 
       tiramisuArray,
       mainMessage: selectedTiramisu.name,
-      dayOfTheWeek: day
+      dayOfTheWeek: day,
+      tiramisuName: selectedTiramisu.name,
+      tiramisuDesc: selectedTiramisu.description,
+      tiramisuImg: selectedTiramisu.image,
     });
 });
 
