@@ -47,7 +47,8 @@ app.get("/tir", (req, res) => {
     {
       selectedTiramisu, 
       tiramisuArray,
-      mainMessage: selectedTiramisu
+      mainMessage: selectedTiramisu.name,
+      dayOfTheWeek: day
     });
 });
 
