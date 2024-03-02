@@ -68,34 +68,34 @@ That is a minimum of 7 accessible routes.
 
 To achieve a Godkänt grade:
 
-Set up an Express server correctly:
-At least 2 routers
-Routers should be imported into index.js
+Set up an Express server correctly: OK
+At least 2 routers OK
+Routers should be imported into index.js OK
 
-Set a view engine:
-correct directory structure
+Set a view engine: OK
+correct directory structure OK
 
 Use of templates:
-All pages should be templates
-Templates should be practical
-Sub pages for each main page should use the same template 
-It's possible all subpages use the same template - this means a minimum of 3 page templates
-Partials for all common element
-Header, footer, navigation etc
-Any reused elements should be partials
-Responsive styling
-static files stored in appropriate location
-at least one img element
-at least one background-image element
-Only the home page is allowed hardcoded content.
-Data passed to templates using the locals object
+All pages should be templates OK
+Templates should be practical OK
+Sub pages for each main page should use the same template OK
+It's possible all subpages use the same template - this means a minimum of 3 page templates CHECK THIS?
+Partials for all common element OK
+Header, footer, navigation etc OK
+Any reused elements should be partials OK
+Responsive styling OK
+static files stored in appropriate location OK
+at least one img element OK
+at least one background-image element OK
+Only the home page is allowed hardcoded content. CHECK THIS
+Data passed to templates using the locals object OK
 
 To achieve a Välgodkänt grade:
-Data organization
-Data to be stored and imported from an appropriate directory
-Data passed to templates correctly
-Conditional Logic
-File Organization
-Consistent and correct coding style.
+Data organization OK
+Data to be stored and imported from an appropriate directory OK
+Data passed to templates correctly OK
+Conditional Logic OK
+File Organization OK
+Consistent and correct coding style. OK
 
 */
