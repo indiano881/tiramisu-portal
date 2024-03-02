@@ -1,4 +1,5 @@
 import express from "express";
+import bodyParser from "body-parser";
 import storeRouter from "./routes/store.js";
 import recepiesRouter from "./routes/recepies.js";
 import about_contactRouter from "./routes/about_contact.js";
@@ -13,6 +14,7 @@ import * as path from "path";
 
 const app=express();
 const port= process.env.PORT || 3000;
+app.use(bodyParser.urlencoded({ extended: true }));//check again this
 const __dirname = path.resolve();
 
 app.set("views", path.join(__dirname, "views"));
@@ -35,16 +37,22 @@ app.get("/", (req,res)=> {
     })
     
 })
-/* BOLLEN GROUP SYSTEM
-app.get("/ReadMore", (req, res) => {
+
+app.get("/tir", (req, res) => {
    const index = req.query.index;
-   const selectedAnimal = arrayOfAnimals[index];
-   console.log(selectedAnimal);
-   res.render("pages/readmore.ejs", {selectedAnimal, Animal, arrayOfAnimals});
+   const selectedTiramisu = tiramisuArray[index];
+   
+   console.log(selectedTiramisu);
+   res.render("pages/home.ejs", 
+    {
+      selectedTiramisu, 
+      tiramisuArray,
+      mainMessage: selectedTiramisu
+    });
 });
 
 
-*/
+
 
 app.listen(port, ()=>console.log("SERVER CONNECTED"))
 

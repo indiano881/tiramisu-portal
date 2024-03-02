@@ -1,4 +1,5 @@
 function Tiramisu(
+    index,
     name, 
     time, 
     calories, 
@@ -13,6 +14,7 @@ function Tiramisu(
     ingredient6,
     ingredient7,
     ingredient8) {
+    this.index=index;
     this.name=name;
     this.time=time;
     this.calories=calories;
@@ -30,6 +32,7 @@ function Tiramisu(
 }
 
 const classic= new Tiramisu(
+    "0",
     "Classico italiano",
     "20 minutes",
     "778",
@@ -44,6 +47,7 @@ const classic= new Tiramisu(
 )
 
 const glutenFree= new Tiramisu(
+    "1",
     "Gluten free",
     "2h",
     "650",
@@ -59,6 +63,7 @@ const glutenFree= new Tiramisu(
 )
 
 const pistache= new Tiramisu(
+    "2",
     "Pistache Tiramisu",
     "2h",
     "650",
@@ -74,6 +79,7 @@ const pistache= new Tiramisu(
 )
 
 const saffran= new Tiramisu(
+    "3",
     "Saffran and orange",
     "1h",
     "650",
@@ -89,6 +95,7 @@ const saffran= new Tiramisu(
 )
 
 const champagne= new Tiramisu(
+    "4",
     "Saffran and orange",
     "1h",
     "650",
@@ -104,6 +111,7 @@ const champagne= new Tiramisu(
 )
 
 const vegan= new Tiramisu(
+    "5",
     "Saffran and orange",
     "10 min",
     "400",

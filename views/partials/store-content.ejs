@@ -2,7 +2,11 @@
 <div class="store-content">
     <% if (locals.page!=undefined) {%>
         <% if (locals.page==="store") { %>
-            
+            <% if (selectedTiramisu) { %>
+                <div class="detail-content">
+                  <h2>Name: <%= selectedTiramisu.name %></h2>
+                  
+                  <% } %>
         <% } %>
     <% } %>
 </div>
