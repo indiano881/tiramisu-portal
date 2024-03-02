@@ -1,7 +1,7 @@
 
 <div class="store-content">
     <% if (locals.page!=undefined) {%>
-        <% if (locals.page==="store") { %>
+        <% if (locals.page.include("/tir?")) { %>
             <% if (locals.selectedTiramisu) { %>
                 <div class="detail-content">
                   <h2>Name: <%= selectedTiramisu.name %></h2>

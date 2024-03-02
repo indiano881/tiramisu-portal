@@ -96,7 +96,7 @@ const saffran= new Tiramisu(
 
 const champagne= new Tiramisu(
     "4",
-    "Saffran and orange",
+    "Champagne",
     "1h",
     "650",
     "1000 sek/kg",
@@ -112,7 +112,7 @@ const champagne= new Tiramisu(
 
 const vegan= new Tiramisu(
     "5",
-    "Saffran and orange",
+    "For the People",
     "10 min",
     "400",
     "1000 sek/kg",
