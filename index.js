@@ -9,23 +9,39 @@ import * as path from "path";
 
 
 const app=express();
-const port= 3000;
+const port= process.env.PORT || 3000;
 const __dirname = path.resolve();
 
 app.set("views", path.join(__dirname, "views"));
+/*
+app.use((req, res, next) => {
+  res.locals.url = req.url;
+  next();
+});
 
+*/
 
 app.get("/", (req,res)=> {
     res.render("pages/home.ejs",
     {
         page: "main",
         mainMessage: "...for the Tiramisu´s Dreamers...",
-        dayOfTheWeek: day
+        dayOfTheWeek: day,
+        url: req.url
         
     })
     
 })
+/* BOLLEN GROUP SYSTEM
+app.get("/ReadMore", (req, res) => {
+   const index = req.query.index;
+   const selectedAnimal = arrayOfAnimals[index];
+   console.log(selectedAnimal);
+   res.render("pages/readmore.ejs", {selectedAnimal, Animal, arrayOfAnimals});
+});
 
+
+*/
 
 app.listen(port, ()=>console.log("SERVER CONNECTED"))
 
