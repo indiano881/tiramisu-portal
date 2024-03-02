@@ -16,5 +16,5 @@ storeRouter.get("/",(req,res)=>{
         
     })
 })
-
+export {tiramisuArray};
 export default storeRouter;

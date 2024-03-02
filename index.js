@@ -5,7 +5,7 @@ import about_contactRouter from "./routes/about_contact.js";
 import historyRouter from "./routes/history.js";
 import companyRouter from "./routes/company.js";
 import locationRouter from "./routes/location.js";
-import { day } from "./data/tiramisu.js";
+import { day, tiramisuArray } from "./data/tiramisu.js";
 
 import * as path from "path";
 
