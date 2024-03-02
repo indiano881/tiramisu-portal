@@ -3,9 +3,11 @@ import storeRouter from "./routes/store.js";
 import recepiesRouter from "./routes/recepies.js";
 import about_contactRouter from "./routes/about_contact.js";
 import historyRouter from "./routes/history.js";
+import companyRouter from "./routes/company.js";
 import { day } from "./data/tiramisu.js";
 
 import * as path from "path";
+
 
 
 const app=express();
@@ -52,6 +54,7 @@ app.use("/tiramisu", storeRouter)
 app.use("/recepies", recepiesRouter)
 app.use("/about_us", about_contactRouter)
 app.use("/history", historyRouter)
+app.use("/company", companyRouter)
 
 /*
 Instructions

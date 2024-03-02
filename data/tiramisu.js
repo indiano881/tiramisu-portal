@@ -116,7 +116,10 @@ const vegan= new Tiramisu(
     "caffe",
     "cacao powder"
 )
+const tiramisuArray = [classic, glutenFree, pistache, champagne, saffran, vegan];
+export {tiramisuArray};
 
 const day= new Date().getDay();
+
 
 export { day };
