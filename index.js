@@ -49,9 +49,12 @@ app.get("/tir", (req, res) => {
       tiramisuArray,
       mainMessage: selectedTiramisu.name,
       dayOfTheWeek: day,
-      tiramisuName: selectedTiramisu.name,
-      tiramisuDesc: selectedTiramisu.description,
-      tiramisuImg: selectedTiramisu.image,
+      name: selectedTiramisu.name,
+      description: selectedTiramisu.description,
+      image: selectedTiramisu.image,
+      price: selectedTiramisu.price,
+      calories: selectedTiramisu.calories,
+      ing1: selectedTiramisu.ingredient1,
     });
 });
 
