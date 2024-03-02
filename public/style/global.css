@@ -30,6 +30,7 @@ h1 {
     font-family: choco, Georgia, Times, 'Times New Roman', serif;
     font-size: calc(1.4rem+1vw);
     font-style: italic;
+    padding: 0;
 }
 
 .opening-hours {
@@ -82,8 +83,10 @@ section {
     display: none;
 }
 
-.tiramisu-img {
-    width: 300px;
+.tiramisu-img,
+.maestro-img {
+    border: var(--border-black);
+    width: 200px;
     height: auto;
 }
 footer {
@@ -94,6 +97,11 @@ footer {
 @media screen and (min-width: 500px) {
     h1 {
         font-size: 3rem;
+    }
+    .tiramisu-img,
+    .maestro-img {
+        width: 350px;
+        height: auto;
     }
 }
 
@@ -130,6 +138,11 @@ footer {
     .google-map2 {
         display: inline-block;
         
+    }
+    .tiramisu-img,
+    .maestro-img {
+        width: 500px;
+        height: auto;
     }
 }
 @media screen and (min-width: 1000px) {
