@@ -4,6 +4,7 @@ import recepiesRouter from "./routes/recepies.js";
 import about_contactRouter from "./routes/about_contact.js";
 import historyRouter from "./routes/history.js";
 import companyRouter from "./routes/company.js";
+import locationRouter from "./routes/location.js";
 import { day } from "./data/tiramisu.js";
 
 import * as path from "path";
@@ -55,7 +56,7 @@ app.use("/recepies", recepiesRouter)
 app.use("/about_us", about_contactRouter)
 app.use("/history", historyRouter)
 app.use("/company", companyRouter)
-
+app.use("/location", locationRouter)
 /*
 Instructions
 For this assignment you are required to build a complete website using Node, Express and EJS. Your knowledge of routing, templates, modular development and project organization will be examined. The choice of subject matter is up to you, but your site  must consist of

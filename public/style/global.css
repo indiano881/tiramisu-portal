@@ -48,7 +48,8 @@ section {
 }
 
 .history,
-.company {
+.company,
+.location {
     background-color: var(--color-primary);
     border: var(--border-black);
     border-radius: 20px;
