@@ -1,11 +1,20 @@
 import express from "express";
+import { day, tiramisuArray } from "../data/tiramisu.js";
 
 
 
 const storeRouter=express.Router();
 
 storeRouter.get("/",(req,res)=>{
-    res.send("store");
+    res.render("pages/home.ejs",
+    {
+        page: "store",
+        mainMessage: "Our products",
+        dayOfTheWeek: day,
+        url: req.url,
+        products: tiramisuArray
+        
+    })
 })
 
 export default storeRouter;

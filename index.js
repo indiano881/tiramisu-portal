@@ -57,6 +57,7 @@ app.use("/about_us", about_contactRouter)
 app.use("/history", historyRouter)
 app.use("/company", companyRouter)
 app.use("/location", locationRouter)
+app.use("/store", storeRouter)
 /*
 Instructions
 For this assignment you are required to build a complete website using Node, Express and EJS. Your knowledge of routing, templates, modular development and project organization will be examined. The choice of subject matter is up to you, but your site  must consist of
