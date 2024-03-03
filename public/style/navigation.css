@@ -1,15 +1,33 @@
-
+:root {
+  --background-color: linear-gradient(0deg, rgb(6, 5, 21) 50%, rgb(86, 0, 167) 120%);
+  --overlay-color: #FCFBF4;
+  --nav-color: #FBF8CC;
+  --header-color: rgba(22, 19, 56, 0.712);
+  
+  --spacing-small: 8px;
+  --spacing-main: 16px;
+  --spacing-large: 36px;
+  --submenu-width: calc((100% - (3 * 10px)) / 3);
+}
     
     
     
 nav ul {
+  background-color: var(--nav-color);
     display: none;
     list-style-type: none;
     cursor: pointer;
     text-align: left;
-    top: 0;
+    top: 70;/* check this*/
+    position: absolute;/* check this*/
 }
-
+.submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+  z-index: 10;
+}
 .submenu li {
     padding-left: var(--spacing-main);
     text-align: left;
@@ -17,6 +35,34 @@ nav ul {
 .hamburger-menu {
     height: 50px;
     width: 50px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: black;
+  padding: 1.2rem;
+}
+
+nav ul li:hover {
+  background-color: var(--overlay-color);
+  transition: 0.7s all;
+}
+a:focus {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+  transition: 1.5s all;
+}
+ul li a.active {
+  text-decoration: none;
+}
+a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  transition: 1.5s all;
 }
 
 
@@ -30,10 +76,6 @@ nav ul {
 
     nav .hamburger-menu {
       display: none;
-    }
-
-    .logo-mobile {
-        display: none;
     }
   
     nav > ul {
