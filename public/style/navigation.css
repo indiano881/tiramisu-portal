@@ -46,6 +46,8 @@ a {
   margin-bottom: 16px;
 }
 nav ul li {
+  text-align: left;
+  margin-bottom: 16px;
   position: relative; /* Ensures that the underline starts from the left */
 }
 
@@ -63,22 +65,16 @@ nav ul li::after {
 nav ul li:hover::after {
   width: 15%; /* When hovering, the underline width expands to 100% */
 }
-li,
-a {
-  margin-bottom: 16px;
-  text-align: left;
-}
 
-
-a:focus {
+nav ul li a:focus {
   color: black;
 }
 
-a:link {
+nav ul li a:link {
   text-decoration: none;
   transition: 1.5s all;
 }
-ul li a.active {
+nav ul li a.active {
   text-decoration: none;
 }
 
