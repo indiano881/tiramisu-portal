@@ -1,8 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import storeRouter from "./routes/store.js";
-import recepiesRouter from "./routes/recepies.js";
-import about_contactRouter from "./routes/about_contact.js";
+
 import historyRouter from "./routes/history.js";
 import companyRouter from "./routes/company.js";
 import locationRouter from "./routes/location.js";
@@ -18,13 +17,6 @@ app.use(bodyParser.urlencoded({ extended: true }));//check again this
 const __dirname = path.resolve();
 
 app.set("views", path.join(__dirname, "views"));
-/*
-app.use((req, res, next) => {
-  res.locals.url = req.url;
-  next();
-});
-
-*/
 
 app.get("/", (req,res)=> {
     res.render("pages/home.ejs",
@@ -42,7 +34,7 @@ app.get("/tir", (req, res) => {
    const index = req.query.index;
    const selectedTiramisu = tiramisuArray[index];
    
-   console.log(selectedTiramisu);
+   
    res.render("pages/single-tiramisu.ejs", 
     {
       selectedTiramisu, 
@@ -67,8 +59,8 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.use("/tiramisu", storeRouter)
-app.use("/recepies", recepiesRouter)
-app.use("/about_us", about_contactRouter)
+
+
 app.use("/history", historyRouter)
 app.use("/company", companyRouter)
 app.use("/location", locationRouter)
