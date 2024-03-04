@@ -15,20 +15,17 @@ nav {
     
 nav ul {
   background-color: var(--color-secondary);
-    display: none;
-    list-style-type: none;
-    cursor: pointer;
-    text-align: left;
-    margin: 0;
-  
-    
+  cursor: pointer;
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  text-align: left;
 }
+
 .submenu {
   
-  left: 100%;
-  top: 0;
   display: none;
-  z-index: 10;
+  
 }
 .submenu li {
     padding-left: var(--spacing-main);
@@ -49,10 +46,28 @@ a {
   text-decoration-color: black;
   padding: 16px;
 }
+nav ul li {
+  position: relative; /* Ensures that the underline starts from the left */
+}
 
-nav ul li:hover {
-  background-color: var(--color-primary);
-  transition: 0.7s all;
+nav ul li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Aligns the underline with the left side of the list item */
+  width: 0; /* Initially, the underline has no width */
+  height: 1px; /* Height of the underline */
+  background-color: black; /* Color of the underline */
+  transition: width 1s ease; /* Transition effect for the width */
+}
+
+nav ul li:hover::after {
+  width: 30%; /* When hovering, the underline width expands to 100% */
+}
+li,
+a {
+  margin-bottom: 16px;
+  text-align: left;
 }
 
 nav ul li a {
@@ -69,11 +84,7 @@ a:link {
 ul li a.active {
   text-decoration: none;
 }
-a:hover {
-  background-color: transparent;
-  text-decoration: underline;
-  transition: 1.5s all;
-}
+
 
 
   
@@ -104,6 +115,8 @@ a:hover {
     .submenu li {
         padding-left: none;
     }
-  
+    nav ul li:hover::after {
+      width: 95%; /* When hovering, the underline width expands to 100% */
+    }
 
   }
