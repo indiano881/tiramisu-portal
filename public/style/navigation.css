@@ -8,9 +8,16 @@
   --spacing-main: 16px;
   --spacing-large: 36px;
   --submenu-width: calc((100% - (3 * 10px)) / 3);
+    --border-standard: 3px solid #FDE4CF;
+    --border-black: 3px solid black;
+    --color-primary: #FCFBF4; /*white cream */
+    --color-secondary: #FBF8CC; /*yellow savoiardish cream */
+
 }
     
-    
+    nav {
+      border: var(--border-standard);
+    }
     
 nav ul {
   background-color: var(--nav-color);
@@ -18,11 +25,12 @@ nav ul {
     list-style-type: none;
     cursor: pointer;
     text-align: left;
-    top: 70;/* check this*/
-    position: absolute;/* check this*/
+    margin: 0;
+  
+    
 }
 .submenu {
-  position: absolute;
+  
   left: 100%;
   top: 0;
   display: none;
@@ -41,12 +49,16 @@ a {
   color: black;
   text-decoration: none;
   text-decoration-color: black;
-  padding: 1.2rem;
+  padding: 16px;
 }
 
 nav ul li:hover {
   background-color: var(--overlay-color);
   transition: 0.7s all;
+}
+
+nav ul li a {
+  padding: 16px;
 }
 a:focus {
   color: black;

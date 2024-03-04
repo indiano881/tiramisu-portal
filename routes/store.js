@@ -16,5 +16,16 @@ storeRouter.get("/",(req,res)=>{
         
     })
 })
+storeRouter.get("/order",(req,res)=>{
+    res.render("pages/home.ejs",
+    {
+        page: "order",
+        mainMessage: "Make an order here",
+        dayOfTheWeek: day,
+        url: req.url,
+        products: tiramisuArray
+        
+    })
+})
 export {tiramisuArray};
 export default storeRouter;
