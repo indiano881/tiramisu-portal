@@ -11,7 +11,7 @@
     
 nav {
     border: var(--border-standard);
-    background-color: #FBF8CC;
+    background-color: var(--color-secondary);
 }
     
 nav ul {
@@ -31,39 +31,44 @@ nav ul {
     padding-left: var(--spacing-main);
     text-align: left;
 }
+
 .hamburger-menu {
     height: 37px;
     width: 37px;
-    position: absolute;
     left: 0;
+    position: absolute;
     top: 0px;
 }
 
 a {
   color: black;
+  margin-bottom: 16px;
   text-decoration: none;
   text-decoration-color: black;
-  margin-bottom: 16px;
 }
+
 nav ul li {
-  text-align: left;
   margin-bottom: 16px;
-  position: relative; /* Ensures that the underline starts from the left */
+  position: relative; 
+  text-align: left;
 }
 
 nav ul li::after {
+  background-color: black; 
   content: '';
-  position: absolute;
+  
   bottom: 0;
-  left: 0; /* Aligns the underline with the left side of the list item */
-  width: 0; /* Initially, the underline has no width */
-  height: 1px; /* Height of the underline */
-  background-color: black; /* Color of the underline */
-  transition: width 1s ease; /* Transition effect for the width */
+  left: 0;
+
+  height: 1px; 
+  width: 0; 
+  
+  position: absolute;
+  transition: width 1s ease; 
 }
 
 nav ul li:hover::after {
-  width: 15%; /* When hovering, the underline width expands to 100% */
+  width: 15%; 
 }
 
 nav ul li a:focus {

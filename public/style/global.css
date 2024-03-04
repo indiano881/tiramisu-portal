@@ -5,10 +5,8 @@
     --color-secondary: #FBF8CC; /*yellow savoiardish cream */
 }
 
-
 * {
     box-sizing: border-box;
-    
 }
 
 html {
@@ -17,13 +15,13 @@ html {
 }
 
 body {
+    background-color: var(--color-primary) ;
     display: flex;
     flex-direction: column;
     font-family: noto, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
     margin:0;
     min-height: 100%;
-    background-color: var(--color-primary) ;
+    text-align: center;
 }
 
 h1 {
@@ -36,20 +34,16 @@ h1 {
 .opening-hours {
     background-color: var(--color-secondary);
     border: var(--border-standard);
-    height: 40px;
     font-weight: bold;
+    height: 40px;
 }
-header {
-    border-bottom: 3px;
-    border-bottom-color: var(--color-secondary);
-}
+
 section {
-    
     background-image: url("../images/background.jpg");
-    flex-grow: 1;
-    background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+    background-size: cover; 
+    flex-grow: 1;
 }
 
 .history,
@@ -58,18 +52,16 @@ section {
     background-color: var(--color-primary);
     border: var(--border-black);
     border-radius: 20px;
-    text-align: center;
     margin: 72px 48px 48px 24px;
-    padding: 16px
-
+    padding: 16px;
+    text-align: center;
 }
 
 .youtube-video1 {
     border: 3px solid black;
     margin-top: 84px;
-    
-    
 }
+
 .youtube-video2 {
     display: none;
 }
@@ -78,9 +70,9 @@ section {
     background-color: var(--color-primary);
     border: var(--border-black);
     border-radius: 20px;
-    text-align: center;
     margin: 72px 8px 8px 24px;
-    padding: 8px
+    padding: 8px;
+    text-align: center;
 }
 
 .google-map2 {
@@ -90,8 +82,8 @@ section {
 .tiramisu-img,
 .maestro-img {
     border: var(--border-standard);
-    width: 200px;
     height: auto;
+    width: 200px;
 }
 
 .order-btn {
@@ -100,15 +92,18 @@ section {
     border-radius: 20px;
     background-color: #FBF8CC;
 }
+
 footer {
     background-color: var(--color-secondary);
     border: var(--border-standard);
-    
 }
+
 @media screen and (min-width: 500px) {
+
     h1 {
         font-size: 3rem;
     }
+
     .tiramisu-img,
     .maestro-img {
         width: 350px;
@@ -116,47 +111,48 @@ footer {
     }
 }
 
-
 @media screen and (min-width: 800px) {
 
     h1 {
         font-size: 4rem;
     }
+
     section {
         background-image: url("../images/background-vertical.jpg");
         
     }
 
-    .history {
-        margin-top: 64px;
-    }
     .youtube-video1 {
         display: none;
     }
+
     .youtube-video2 {
         border: var(--border-black);
         margin-top: 48px;
         display: inline-block;
     }
+
     .location {
-        
         margin: 72px 144px 24px 144px;
-        
     }
+
     .google-map1 {
         display: none;
     }
+
     .google-map2 {
         display: inline-block;
-        
     }
+
     .tiramisu-img,
     .maestro-img {
-        width: 500px;
         height: auto;
+        width: 500px;
     }
 }
+
 @media screen and (min-width: 1000px) {
+    
     h1 {
         font-size: 5rem;
     }
