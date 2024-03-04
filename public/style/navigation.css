@@ -43,7 +43,7 @@ a {
   color: black;
   text-decoration: none;
   text-decoration-color: black;
-  padding: 16px;
+  margin-bottom: 16px;
 }
 nav ul li {
   position: relative; /* Ensures that the underline starts from the left */
@@ -61,7 +61,7 @@ nav ul li::after {
 }
 
 nav ul li:hover::after {
-  width: 30%; /* When hovering, the underline width expands to 100% */
+  width: 15%; /* When hovering, the underline width expands to 100% */
 }
 li,
 a {
@@ -69,9 +69,7 @@ a {
   text-align: left;
 }
 
-nav ul li a {
-  padding: 16px;
-}
+
 a:focus {
   color: black;
 }
