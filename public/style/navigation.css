@@ -1,23 +1,17 @@
 :root {
-  --background-color: linear-gradient(0deg, rgb(6, 5, 21) 50%, rgb(86, 0, 167) 120%);
-  --overlay-color: #FCFBF4;
-  --nav-color: #FBF8CC;
-  --header-color: rgba(22, 19, 56, 0.712);
-  
   --spacing-small: 8px;
   --spacing-main: 16px;
   --spacing-large: 36px;
   --submenu-width: calc((100% - (3 * 10px)) / 3);
-    --border-standard: 3px solid #FDE4CF;
-    --border-black: 3px solid black;
-    --color-primary: #FCFBF4; /*white cream */
-    --color-secondary: #FBF8CC; /*yellow savoiardish cream */
-
+  --border-standard: 3px solid #FDE4CF;
+  --border-black: 3px solid black;
+  --color-primary: #FCFBF4; /*white cream */
+  --color-secondary: #FBF8CC; /*yellow savoiardish cream */
 }
     
-    nav {
-      border: var(--border-standard);
-    }
+nav {
+    border: var(--border-standard);
+}
     
 nav ul {
   background-color: var(--nav-color);
@@ -53,7 +47,7 @@ a {
 }
 
 nav ul li:hover {
-  background-color: var(--overlay-color);
+  background-color: var(--color-primary);
   transition: 0.7s all;
 }
 

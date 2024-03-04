@@ -1,11 +1,23 @@
 <div class="opening-hours">
 <% if (locals.dayOfTheWeek!==undefined) {%>
-    <% if (locals.dayOfTheWeek===2 || locals.dayOfTheWeek===6) { %>
+    <% if (locals.dayOfTheWeek===0 || locals.dayOfTheWeek===6) { %>
         <p>Closed until Monday 11.00</p>
-    <% } else { %>
-        <p>Today open: 11.00-18.00</p>
+    <% } else if (locals.dayOfTheWeek===1) { %>
+        <p>Monday open: 11.00-18.00</p>
 
-        <%} %>
+    <%} else if (locals.dayOfTheWeek===2) { %>
+        <p>Tuesday open: 11.00-18.00</p>
+    
+    <%} else if (locals.dayOfTheWeek===3) { %>
+        <p>Wednesday open: 10.00-19.00</p>
+        
+    <%} else if (locals.dayOfTheWeek===4) { %>
+        <p>Thursday open: 10.00-19.00</p>
+    
+    <%} else if (locals.dayOfTheWeek===5) { %>
+        <p>Friday open: 10.00-23.00</p>
+        
+    <%} %>
 
 <% } %>
 
