@@ -14,7 +14,7 @@ nav {
 }
     
 nav ul {
-  background-color: var(--nav-color);
+  background-color: var(--color-secondary);
     display: none;
     list-style-type: none;
     cursor: pointer;
@@ -35,8 +35,12 @@ nav ul {
     text-align: left;
 }
 .hamburger-menu {
-    height: 50px;
-    width: 50px;
+    height: 37px;
+    width: 37px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    
 }
 
 a {
