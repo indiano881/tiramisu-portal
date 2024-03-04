@@ -11,6 +11,7 @@
     
 nav {
     border: var(--border-standard);
+    background-color: #FBF8CC;
 }
     
 nav ul {
@@ -23,10 +24,9 @@ nav ul {
 }
 
 .submenu {
-  
   display: none;
-  
 }
+
 .submenu li {
     padding-left: var(--spacing-main);
     text-align: left;
@@ -37,7 +37,6 @@ nav ul {
     position: absolute;
     left: 0;
     top: 0px;
-    
 }
 
 a {
@@ -84,8 +83,6 @@ a:link {
 ul li a.active {
   text-decoration: none;
 }
-
-
 
   
   @media screen and (min-width: 768px) {
