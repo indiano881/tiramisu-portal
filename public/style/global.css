@@ -39,8 +39,12 @@ h1 {
     height: 40px;
     font-weight: bold;
 }
-
+header {
+    border-bottom: 3px;
+    border-bottom-color: var(--color-secondary);
+}
 section {
+    
     background-image: url("../images/background.jpg");
     flex-grow: 1;
     background-size: cover; 
@@ -85,9 +89,16 @@ section {
 
 .tiramisu-img,
 .maestro-img {
-    border: var(--border-black);
+    border: var(--border-standard);
     width: 200px;
     height: auto;
+}
+
+.order-btn {
+    padding: 8px;
+    border: var(--border-black);
+    border-radius: 20px;
+    background-color: #FBF8CC;
 }
 footer {
     background-color: var(--color-secondary);
