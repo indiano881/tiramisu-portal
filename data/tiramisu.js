@@ -11,9 +11,7 @@ function Tiramisu(
     ingredient3,
     ingredient4,
     ingredient5,
-    ingredient6,
-    ingredient7,
-    ingredient8) {
+    ingredient6) {
     this.index=index;
     this.name=name;
     this.time=time;
@@ -27,8 +25,7 @@ function Tiramisu(
     this.ingredient4=ingredient4;
     this.ingredient5=ingredient5;
     this.ingredient6=ingredient6;
-    this.ingredient7=ingredient7;
-    this.ingredient8=ingredient8;
+    
 }
 
 const classic= new Tiramisu(
