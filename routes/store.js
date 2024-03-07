@@ -16,10 +16,11 @@ storeRouter.get("/",(req,res)=>{
         
     })
 })
+
 storeRouter.get("/order",(req,res)=>{
     res.render("pages/store.ejs",
     {
-        page: "order",
+        page: "store/order",
         mainMessage: "Make an order here",
         dayOfTheWeek: day,
         url: req.url,
@@ -27,5 +28,17 @@ storeRouter.get("/order",(req,res)=>{
         
     })
 })
-export {tiramisuArray};
+
+storeRouter.get("/catalog",(req,res)=>{
+    res.render("pages/store.ejs",
+    {
+            page: "store/catalog",
+            mainMessage: "Catalog",
+            dayOfTheWeek: day,
+            url: req.url,
+            products: tiramisuArray
+            
+    })
+})
+
 export default storeRouter;

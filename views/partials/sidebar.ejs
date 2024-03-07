@@ -1,6 +1,7 @@
 <div class="sidebar">
     <% if (locals.page!=undefined ) { %>
-        <%  if (locals.page==="store" || locals.page==="store/order") {%>
+        <%  if (locals.page==="store" || locals.page==="store/order" || locals.page==="store/catalog") {%>
+            <h1>Conte si displayed</h1>
             <a href="/store/catalog">View catalog</a>
             <a href="/store/order">Make an order</a>
         <% } %>
