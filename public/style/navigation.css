@@ -83,36 +83,38 @@ nav ul li a.active {
   text-decoration: none;
 }
 
-  /* MUST CLEANU UP CODE FROM HERE*/
-  @media screen and (min-width: 768px) {
-    header {  
-        display: block;
-        margin-right: var(--spacing-large);
-        margin-left: var(--spacing-large);
-    }
-
-    nav .hamburger-menu {
-      display: none;
-    }
-  
-    nav > ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      list-style-type: none;
-    }
-  
-    nav > ul > li {
+ 
+@media screen and (min-width: 768px) {
+  header {  
+      display: block;
+      margin-left: var(--spacing-large);
+      margin-right: var(--spacing-large);
       
-      cursor: pointer;
-      padding: var(--spacing-small) var(--spacing-main);
-      
-    }
-    .submenu li {
-        padding-left: none;
-    }
-    nav ul li:hover::after {
-      width: 95%; /* When hovering, the underline width expands to 100% */
-    }
-
   }
+
+  nav .hamburger-menu {
+      display: none;
+  }
+  
+  nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  nav > ul > li { 
+    cursor: pointer;
+    padding: var(--spacing-small) var(--spacing-main);
+      
+  }
+
+  .submenu li {
+    padding-left: none;
+  }
+  
+  nav ul li:hover::after {
+    width: 95%; 
+    }
+
+}
