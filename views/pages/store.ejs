@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include("../partials/head.ejs") %>
+    <% if (locals.page!==undefined) { %>
+        <% if (locals.page==="store") { %>
+            <%- include("../partials/head.ejs") %>
+        <% } else if (locals.page==="store/order" || locals.page==="store/catalog") { %>
+            <%- include("../partials/headLevelUp.ejs") %>
+        <% } %>
+<% } %>
 <body>
     <%- include("../partials/openingHours.ejs") %>
     <%- include("../partials/navigation.ejs") %>

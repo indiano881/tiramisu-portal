@@ -58,16 +58,17 @@ app.get("/tir", (req, res) => {
 
 
 
-app.listen(port, ()=>console.log("SERVER CONNECTED"))
+app.listen(port, ()=>console.log(`SERVER CONNECTED PORT: ${port}`))
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-app.use("/tiramisu", storeRouter)
 app.use("/history", historyRouter)
 app.use("/company", companyRouter)
 app.use("/location", locationRouter)
 app.use("/store", storeRouter)
+app.use("/store/order", storeRouter)
+app.use("/store/catalog", storeRouter)
 /*
 Instructions
 For this assignment you are required to build a complete website using Node, Express and EJS. Your knowledge of routing, templates, modular development and project organization will be examined. The choice of subject matter is up to you, but your site  must consist of
