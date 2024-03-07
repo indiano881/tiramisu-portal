@@ -47,6 +47,11 @@ app.get("/tir", (req, res) => {
       price: selectedTiramisu.price,
       calories: selectedTiramisu.calories,
       ing1: selectedTiramisu.ingredient1,
+      ing2: selectedTiramisu.ingredient2,
+      ing3: selectedTiramisu.ingredient3,
+      ing4: selectedTiramisu.ingredient4,
+      ing5: selectedTiramisu.ingredient5,
+      ing6: selectedTiramisu.ingredient6
     });
 });
 
