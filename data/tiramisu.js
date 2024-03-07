@@ -52,7 +52,7 @@ const glutenFree= new Tiramisu(
     "A Gourmet option for those who are gluten intollerant",
     "images/glutenfree.jpg",
     "mascarpone",
-    "Oat chocolate biscuits",
+    "oat chocolate biscuits",
     "eggs",
     "coffe",
     "chocolate",
@@ -88,7 +88,7 @@ const saffran= new Tiramisu(
     "eggs",
     "milk",
     "saffran",
-    "Oranges"
+    "oranges"
 )
 
 const champagne= new Tiramisu(
@@ -104,7 +104,7 @@ const champagne= new Tiramisu(
     "eggs",
     "heavy cream",
     "champagne",
-    "Vanilja"
+    "vanilja"
 )
 
 const vegan= new Tiramisu(
