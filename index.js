@@ -37,6 +37,7 @@ app.get("/tir", (req, res) => {
    
    res.render("pages/single-tiramisu.ejs", 
     {
+        page: "tir",
       selectedTiramisu, 
       tiramisuArray,
       mainMessage: selectedTiramisu.name,

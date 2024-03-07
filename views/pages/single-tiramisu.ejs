@@ -3,16 +3,36 @@
     <% if (locals.page!==undefined) { %>
         <% if (locals.page==="tiramisu") { %>
             <%- include("../partials/headLevelUp.ejs") %>
-        <% } else  { %>
+        <% } else if ((locals.page==="tir")) { %>
             
             <%- include("../partials/head.ejs") %>
         <% } %>
 <% } %>
-<%- include("../partials/head.ejs") %>
+
 <body>
     <%- include("../partials/openingHours.ejs") %>
-    <%- include("../partials/navigation.ejs") %>
+
+
+    <% if (locals.page!==undefined) { %>
+        <% if (locals.page==="tiramisu") { %>
+            <%- include("../partials/navigationLevelUp.ejs") %>
+        <% } else if ((locals.page==="tir")) { %>
+            
+            <%- include("../partials/navigation.ejs") %>
+        <% } %>
+<% } %>
+    
+
+
+
+
+
     <%- include("../partials/header.ejs") %>
+
+
+
+
+
     <section>
         <%- include("../partials/store-content.ejs") %>
     </section>
