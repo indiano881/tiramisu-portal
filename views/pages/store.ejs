@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head.ejs") %>
+<body>
+    <%- include("../partials/openingHours.ejs") %>
+    <%- include("../partials/navigation.ejs") %>
+    <%- include("../partials/header.ejs") %>
+    
+
+    
+    <section>
+        
+        <% if (locals.page!==undefined) { %>
+            <% if (locals.page==="store" || locals.page==="store/order") { %>
+                <%- include("../partials/sidebar.ejs") %>
+            <% } %>
+    
+    <% } %>
+    
+    
+    </section>
+
+
+
+
+    <%- include("../partials/footer.ejs") %>
+    
+</body>
+</html>

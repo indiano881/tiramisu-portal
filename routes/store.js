@@ -6,7 +6,7 @@ import { day, tiramisuArray } from "../data/tiramisu.js";
 const storeRouter=express.Router();
 
 storeRouter.get("/",(req,res)=>{
-    res.render("pages/home.ejs",
+    res.render("pages/store.ejs",
     {
         page: "store",
         mainMessage: "Our products",
@@ -17,7 +17,7 @@ storeRouter.get("/",(req,res)=>{
     })
 })
 storeRouter.get("/order",(req,res)=>{
-    res.render("pages/home.ejs",
+    res.render("pages/store.ejs",
     {
         page: "order",
         mainMessage: "Make an order here",
