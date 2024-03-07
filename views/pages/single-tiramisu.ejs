@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+    <% if (locals.page!==undefined) { %>
+        <% if (locals.page==="tiramisu") { %>
+            <%- include("../partials/headLevelUp.ejs") %>
+        <% } else  { %>
+            
+            <%- include("../partials/head.ejs") %>
+        <% } %>
+<% } %>
 <%- include("../partials/head.ejs") %>
 <body>
     <%- include("../partials/openingHours.ejs") %>
