@@ -19,6 +19,7 @@ nav ul {
   cursor: pointer;
   display: none;
   list-style-type: none;
+  
   margin: 0;
   text-align: left;
 }
@@ -29,6 +30,7 @@ nav ul {
 
 .submenu li {
     padding-left: var(--spacing-main);
+    
     text-align: left;
 }
 
@@ -68,7 +70,7 @@ nav ul li::after {
 }
 
 nav ul li:hover::after {
-  width: 15%; 
+  width: 50%; 
 }
 
 nav ul li a:focus {
