@@ -55,6 +55,7 @@ section {
     border: var(--border-black);
     border-radius: 20px;
     margin: 72px 48px 48px 24px;
+    min-height: 300px;
     padding: 16px;
     text-align: center;
 }
@@ -95,11 +96,20 @@ section {
 
 .order-btn,
 .catalog-btn,
-.send-order {
+.send-btn {
     padding: 8px;
     border: var(--border-black);
     border-radius: 20px;
     background-color: #FBF8CC;
+    margin: 16px;
+}
+
+button.send-btn {
+    font-family: noto, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 footer {
@@ -157,6 +167,11 @@ footer {
     .maestro-img {
         height: auto;
         width: 500px;
+    }
+    button.send-btn {
+        
+        margin-left: 40%;
+        margin-right: 40%;
     }
 }
 
