@@ -23,8 +23,8 @@ app.get("/", (req,res)=> {
     {
         page: "main",
         mainMessage: "...for the Tiramisu´s Dreamers...",
-        dayOfTheWeek: day,
-        url: req.url
+        dayOfTheWeek: day
+        
     })
 })
 

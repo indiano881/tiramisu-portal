@@ -1,8 +1,6 @@
 import express from "express";
 import { day } from "../data/tiramisu.js";
 
-
-
 const locationRouter=express.Router();
 
 locationRouter.get("/",(req,res)=>{
@@ -11,7 +9,6 @@ locationRouter.get("/",(req,res)=>{
         page: "location",
         mainMessage: "Where",
         dayOfTheWeek: day
-        
     })
 })
 

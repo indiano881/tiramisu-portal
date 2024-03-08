@@ -1,8 +1,6 @@
 import express from "express";
 import { day, tiramisuArray } from "../data/tiramisu.js";
 
-
-
 const storeRouter=express.Router();
 
 storeRouter.get("/",(req,res)=>{
@@ -11,10 +9,7 @@ storeRouter.get("/",(req,res)=>{
         page: "store",
         mainMessage: "Our services",
         dayOfTheWeek: day,
-        url: req.url,
-        products: tiramisuArray,
         subMessage: "Catering, bakery, birthday party, weddings"
-        
     })
 })
 
@@ -23,11 +18,7 @@ storeRouter.get("/order",(req,res)=>{
     {
         page: "store/order",
         mainMessage: "Make an order here",
-        dayOfTheWeek: day,
-        url: req.url,
-        products: tiramisuArray,
-        
-        
+        dayOfTheWeek: day 
     })
 })
 
@@ -36,17 +27,13 @@ storeRouter.get("/catalog",(req,res)=>{
     {
             page: "store/catalog",
             mainMessage: "Catalog",
-            dayOfTheWeek: day,
-            url: req.url,
-            products: tiramisuArray
-            
+            dayOfTheWeek: day,  
     })
 })
 
 storeRouter.get("/tir", (req, res) => {
     const index = req.query.index;
     const selectedTiramisu = tiramisuArray[index];
-    
     
     res.render("pages/single-tiramisu.ejs", 
      {
