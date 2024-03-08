@@ -49,13 +49,19 @@ section {
 .history,
 .company,
 .tiramisu-schedule,
-.store {
+.store,
+.form {
     background-color: var(--color-primary);
     border: var(--border-black);
     border-radius: 20px;
     margin: 72px 48px 48px 24px;
     padding: 16px;
     text-align: center;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
 }
 
 .youtube-video1 {
@@ -88,7 +94,8 @@ section {
 }
 
 .order-btn,
-.catalog-btn {
+.catalog-btn,
+.send-order {
     padding: 8px;
     border: var(--border-black);
     border-radius: 20px;
