@@ -88,7 +88,8 @@ section {
 }
 
 .tiramisu-img,
-.maestro-img {
+.maestro-img,
+.history-img {
     border: var(--border-standard);
     height: auto;
     width: 200px;
@@ -179,7 +180,8 @@ footer {
     }
 
     .tiramisu-img,
-    .maestro-img {
+    .maestro-img,
+    .history-img {
         height: auto;
         width: 500px;
     }
