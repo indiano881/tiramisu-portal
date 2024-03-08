@@ -96,7 +96,10 @@ section {
 
 .order-btn,
 .catalog-btn,
-.send-btn {
+.send-btn,
+.treviso-btn,
+.savoiardi-btn,
+.mascarpone-btn {
     padding: 8px;
     border: var(--border-black);
     border-radius: 20px;

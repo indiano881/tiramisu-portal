@@ -9,16 +9,16 @@
 <% } %>
 <body>
     <%- include("../partials/openingHours.ejs") %>
-    <%- include("../partials/navigation.ejs") %>
+    <%- include("../partials/navigationLevelUp.ejs") %>
     <%- include("../partials/header.ejs") %>
     
     <section>
-        <% if (locals.page!==undefined) { %>
-            <% if (locals.page==="history") { %>
-            <%- include("../partials/central-content.ejs") %>
-            <% }  %>
+        
+            
+            <%- include("../partials/history-content.ejs") %>
+            
     
-        <% } %>
+       
     </section>
 
 
