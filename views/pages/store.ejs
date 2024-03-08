@@ -6,30 +6,20 @@
         <% } else if (locals.page==="store/order" || locals.page==="store/catalog") { %>
             <%- include("../partials/headLevelUp.ejs") %>
         <% } %>
-<% } %>
+    <% } %>
 <body>
     <%- include("../partials/openingHours.ejs") %>
     <%- include("../partials/navigationLevelUp.ejs") %>
     <%- include("../partials/header.ejs") %>
-    
 
-    
     <section>
-        
         <% if (locals.page!==undefined) { %>
             <% if (locals.page==="store" || locals.page==="store/order" || locals.page==="store/catalog") { %>
                 <%- include("../partials/store-content.ejs") %>
             <% } %>
-    
-    <% } %>
-    
-    
+        <% } %>
     </section>
-
-
-
-
     <%- include("../partials/footer.ejs") %>
-    
 </body>
+
 </html>

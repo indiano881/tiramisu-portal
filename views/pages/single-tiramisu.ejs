@@ -4,20 +4,17 @@
         <% if (locals.page==="tiramisu") { %>
             <%- include("../partials/headLevelUp.ejs") %>
         <% } else if ((locals.page==="tir")) { %>
-            
             <%- include("../partials/head.ejs") %>
         <% } %>
-<% } %>
+    <% } %>
 
 <body>
     <%- include("../partials/openingHours.ejs") %>
-
 
     <% if (locals.page!==undefined) { %>
         <% if (locals.page==="tiramisu") { %>
             <%- include("../partials/navigationLevelUp.ejs") %>
         <% } else if ((locals.page==="tir")) { %>
-            
             <%- include("../partials/navigation.ejs") %>
         <% } %>
     <% } %>
@@ -29,4 +26,5 @@
     <%- include("../partials/footer.ejs") %>
 
 </body>
+
 </html>
