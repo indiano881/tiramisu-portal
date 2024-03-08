@@ -95,6 +95,7 @@ section {
 }
 .button-container {
 display: flex;
+flex-direction: column;
 justify-content: center;
 }
 
@@ -113,7 +114,12 @@ justify-content: center;
 input {
     margin-bottom: 16px;
 }
-button.send-btn {
+button.send-btn,
+.order-btn,
+.catalog-btn,
+.treviso-btn,
+.savoiardi-btn,
+.mascarpone-btn {
     font-family: noto, Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
     cursor: pointer;
@@ -177,7 +183,12 @@ footer {
         height: auto;
         width: 500px;
     }
-    button.send-btn {
+    button.send-btn,
+.order-btn,
+.catalog-btn,
+.treviso-btn,
+.savoiardi-btn,
+.mascarpone-btn  {
         
         margin-left: 40%;
         margin-right: 40%;
