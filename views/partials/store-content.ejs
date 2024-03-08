@@ -15,9 +15,11 @@
 
         <% } else if (locals.page==="store/catalog") { %>
 
+            <div class="form">
+                <%- include("form-catalog.ejs") %>
+            </div>
 
-
-            <a class="order-btn" href="/store/order">Make an order</a>
+            
             
             <% } %>
     <% } %>

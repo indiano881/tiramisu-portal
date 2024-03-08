@@ -103,7 +103,9 @@ section {
     background-color: #FBF8CC;
     margin: 16px;
 }
-
+input {
+    margin-bottom: 16px;
+}
 button.send-btn {
     font-family: noto, Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
