@@ -3,11 +3,13 @@
         <%  if (locals.page==="store" ) {%>
             <div class="store">
             
-            <h2>We are available for the following services:</h2>
-            <h3> <%= locals.subMessage %></h3>
-            <a class="catalog-btn" href="/store/catalog">Request a catalog</a>
-            <a class="order-btn" href="/store/order">Make an order</a>
-        </div>
+                <h2>We are available for the following services:</h2>
+                <h3> <%= locals.subMessage %></h3>
+                <div class="button-container">
+                    <a class="catalog-btn" href="/store/catalog">Request a catalog</a>
+                    <a class="order-btn" href="/store/order">Make an order</a>
+                </div>
+            </div>
         <% } else if (locals.page==="store/order") { %>
             <div class="form">
                 <%- include("form.ejs") %>

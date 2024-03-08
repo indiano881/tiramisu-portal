@@ -93,6 +93,10 @@ section {
     height: auto;
     width: 200px;
 }
+.button-container {
+display: flex;
+justify-content: center;
+}
 
 .order-btn,
 .catalog-btn,
