@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <% if (locals.page!==undefined) { %>
+        <% if (locals.page==="history") { %>
+            <%- include("../partials/head.ejs") %>
+        <% } else if (locals.page==="history/treviso" || locals.page==="history/savoiardi" || locals.page==="history/mascarpone") { %>
+            <%- include("../partials/headLevelUp.ejs") %>
+        <% } %>
+<% } %>
+<body>
+    <%- include("../partials/openingHours.ejs") %>
+    <%- include("../partials/navigation.ejs") %>
+    <%- include("../partials/header.ejs") %>
+    
+    <section>
+        <% if (locals.page!==undefined) { %>
+            <% if (locals.page==="history") { %>
+            <%- include("../partials/central-content.ejs") %>
+            <% }  %>
+    
+        <% } %>
+    </section>
+
+
+    <%- include("../partials/footer.ejs") %>
+    
+</body>
+</html>
