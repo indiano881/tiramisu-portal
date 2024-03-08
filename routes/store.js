@@ -9,10 +9,11 @@ storeRouter.get("/",(req,res)=>{
     res.render("pages/store.ejs",
     {
         page: "store",
-        mainMessage: "Our products",
+        mainMessage: "Our services",
         dayOfTheWeek: day,
         url: req.url,
-        products: tiramisuArray
+        products: tiramisuArray,
+        subMessage: "Catering, bakery, birthday party, weddings"
         
     })
 })
@@ -24,7 +25,8 @@ storeRouter.get("/order",(req,res)=>{
         mainMessage: "Make an order here",
         dayOfTheWeek: day,
         url: req.url,
-        products: tiramisuArray
+        products: tiramisuArray,
+        
         
     })
 })

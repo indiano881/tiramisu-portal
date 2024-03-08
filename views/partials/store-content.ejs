@@ -1,9 +1,30 @@
-<div class="sidebar">
+<div class="central-content">
     <% if (locals.page!=undefined ) { %>
-        <%  if (locals.page==="store" || locals.page==="store/order" || locals.page==="store/catalog") {%>
-            <h1>Content si displayed</h1>
-            <a href="/store/catalog">View catalog</a>
-            <a href="/store/order">Make an order</a>
-        <% } %>
+        <%  if (locals.page==="store" ) {%>
+            <div class="store">
+            
+            <h2>We are available for the following services:</h2>
+            <h3> <%= locals.subMessage %></h3>
+            <a class="catalog-btn" href="/store/catalog">View catalog</a>
+            <a class="order-btn" href="/store/order">Make an order</a>
+        </div>
+        <% } else if (locals.page==="store/order") { %>
+            <div class="form">
+
+
+                <a class="catalog-btn" href="/store/catalog">View catalog</a>
+            </div>
+
+
+
+
+
+        <% } else if (locals.page==="store/catalog") { %>
+
+
+
+            <a class="order-btn" href="/store/order">Make an order</a>
+            
+            <% } %>
     <% } %>
 </div>

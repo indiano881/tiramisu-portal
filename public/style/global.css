@@ -48,7 +48,8 @@ section {
 
 .history,
 .company,
-.tiramisu-schedule {
+.tiramisu-schedule,
+.store {
     background-color: var(--color-primary);
     border: var(--border-black);
     border-radius: 20px;
@@ -86,7 +87,8 @@ section {
     width: 200px;
 }
 
-.order-btn {
+.order-btn,
+.catalog-btn {
     padding: 8px;
     border: var(--border-black);
     border-radius: 20px;
