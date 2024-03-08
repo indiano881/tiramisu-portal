@@ -1,0 +1,33 @@
+.youtube-video1 {
+    border: 3px solid black;
+    margin-top: 84px;
+}
+
+.youtube-video2 {
+    display: none;
+}
+.google-map2 {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+
+    .youtube-video1 {
+        display: none;
+    }
+
+    .youtube-video2 {
+        border: var(--border-black);
+        margin-top: 48px;
+        display: inline-block;
+    }
+
+    .google-map1 {
+        display: none;
+    }
+
+    .google-map2 {
+        display: inline-block;
+    }
+}
+

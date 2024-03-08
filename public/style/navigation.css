@@ -1,8 +1,6 @@
 :root {
   --spacing-small: 8px;
   --spacing-main: 16px;
-  --spacing-large: 36px;
-  --submenu-width: calc((100% - (3 * 10px)) / 3);
   --border-standard: 3px solid #FDE4CF;
   --border-black: 3px solid black;
   --color-primary: #FCFBF4; /*white cream */
@@ -10,8 +8,8 @@
 }
     
 nav {
-    border: var(--border-standard);
-    background-color: var(--color-secondary);
+  background-color: var(--color-secondary);
+  border: var(--border-standard);
 }
     
 nav ul {
@@ -19,7 +17,6 @@ nav ul {
   cursor: pointer;
   display: none;
   list-style-type: none;
-  
   margin: 0;
   text-align: left;
 }
@@ -30,16 +27,15 @@ nav ul {
 
 .submenu li {
     padding-left: var(--spacing-main);
-    
     text-align: left;
 }
 
 .hamburger-menu {
     height: 37px;
     width: 37px;
-    left: 0;
+    left: 8px;
     position: absolute;
-    top: 0px;
+    top: 8px;
 }
 
 a {
@@ -58,7 +54,7 @@ nav ul li {
 nav ul li::after {
   background-color: black; 
   content: '';
-  
+
   bottom: 0;
   left: 0;
 
@@ -84,14 +80,12 @@ nav ul li a:link {
 nav ul li a.active {
   text-decoration: none;
 }
-
  
 @media screen and (min-width: 768px) {
   header {  
       display: block;
       margin-left: var(--spacing-large);
       margin-right: var(--spacing-large);
-      
   }
 
   nav .hamburger-menu {
@@ -108,7 +102,6 @@ nav ul li a.active {
   nav > ul > li { 
     cursor: pointer;
     padding: var(--spacing-small) var(--spacing-main);
-      
   }
 
   .submenu li {
@@ -118,5 +111,4 @@ nav ul li a.active {
   nav ul li:hover::after {
     width: 95%; 
     }
-
 }
